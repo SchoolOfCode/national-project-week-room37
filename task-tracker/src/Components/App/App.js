@@ -1,23 +1,19 @@
 import "./App.css";
-import { ListItem } from "../List-Item";
+import DisplayList from "../List";
+import Button from "../Button";
 
 function App() {
   const workshops = [
     { title: "Hackathon", date: "10/12/2021", isCompleted: false },
+    { title: "Hackathon", date: "10/12/2021", isCompleted: false },
+    { title: "Hackathon", date: "10/12/2021", isCompleted: false },
+    { title: "Hackathon", date: "10/12/2021", isCompleted: false }
   ];
 
   return (
     <div className="App">
-      {workshops.map((item, index) => {
-        return (
-          <ListItem
-            title={item.title}
-            date={item.date}
-            status={item.isCompleted}
-            key={index}
-          />
-        );
-      })}
+      <DisplayList workshops={workshops} />
+      <Button title='Return'/>
     </div>
   );
 }

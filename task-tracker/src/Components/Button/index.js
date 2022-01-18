@@ -1,6 +1,6 @@
 import "./index.css";
 
-export default function ButtonTaskList() {
+export default function Button({title}) {
   // once clicked,  the button will take the user to the SoC task list.
-  function onClick() {}
+  return <button>{title}</button> 
 }

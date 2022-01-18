@@ -1,18 +1,20 @@
 import React from "react";
 import "./index.css";
+import { ListItem } from "../List-Item";
 
-export default function displayLIst({ title, date, completed, link, comment }) {
+export default function DisplayList({ workshops}) {
   return (
     <main>
-      <h1>{title}</h1>
+      <h1>SoC Tasks</h1>
       <ul>
-        <li>{title}</li>
-        <li>{date}</li>
-        <li>{completed}</li>
-        <li>
-          <a href={link} />
-        </li>
-        <li>{comment}</li>
+      {workshops.map(function(item,index) {
+        return (<ListItem 
+                  title={item.title} 
+                  date={item.date}
+                  status={item.isCompleted}
+                  key={index}
+                />)
+      })}
       </ul>
     </main>
   );
