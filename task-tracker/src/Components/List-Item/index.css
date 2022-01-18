@@ -1,0 +1,12 @@
+.SoC-List-Item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  border: solid 1px black;
+}
+
+li {
+  list-style-type: none;
+  border: solid 1px black;
+}
