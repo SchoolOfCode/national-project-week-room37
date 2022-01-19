@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <DisplayList workshops={workshops} onClick={toggleButton} />
+      <DisplayList workshops={toggleIsCompleted} onClick={toggleButton} />
       <Button title="Return" />
     </div>
   );
