@@ -20,4 +20,5 @@ ButtonComplete Componment - Toggle complete/completed
 Create an API to fetch the information
 Create an array of objects which will contain the tasks we will be working with.
 Create a database in heroku and get it working
+Create method to update status.
 Connect the database to the front end
