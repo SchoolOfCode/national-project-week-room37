@@ -1,9 +1,12 @@
 import "./App.css";
 import DisplayList from "../List";
 import Button from "../Button";
+import { MainBoard } from "../MainBoard";
 import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
-function App() {
+export default function App() {
   const workshops = [
     { title: "Hackathon", date: "10/12/2021", isCompleted: false },
     { title: "Hackathon", date: "10/12/2021", isCompleted: false },
@@ -29,10 +32,26 @@ function App() {
 
   return (
     <div className="App">
-      <DisplayList workshops={toggleIsCompleted} onClick={toggleButton} />
-      <Button title="Return" />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainBoard />} />
+
+          <Route
+            path="/SoCTasks"
+            element={
+              <>
+                <DisplayList
+                  workshops={toggleIsCompleted}
+                  onClick={toggleButton}
+                />
+                <Button title="Return" />
+              </>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+//export default App;
