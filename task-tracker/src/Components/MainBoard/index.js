@@ -1,5 +1,6 @@
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
+import "./index.css";
 
 export function MainBoard() {
   let navigate = useNavigate();
