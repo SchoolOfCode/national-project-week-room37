@@ -1,8 +1,11 @@
 import React from "react";
 import "./index.css";
 import { ListItem } from "../List-Item";
+import Button from "../Button";
+import { useNavigate } from "react-router";
 
 export default function DisplayList({ workshops, onClick }) {
+  let navigate = useNavigate();
   return (
     <main>
       <h1>SoC Tasks</h1>
@@ -20,6 +23,12 @@ export default function DisplayList({ workshops, onClick }) {
             />
           );
         })}
+        <Button
+          title="Return"
+          onClick={() => {
+            navigate("/");
+          }}
+        />
       </ul>
     </main>
   );

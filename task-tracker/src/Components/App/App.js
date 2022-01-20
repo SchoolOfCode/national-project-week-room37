@@ -1,6 +1,6 @@
 import "./App.css";
 import DisplayList from "../List";
-import Button from "../Button";
+
 import { MainBoard } from "../MainBoard";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -29,6 +29,8 @@ export default function App() {
     console.log(newWorkshop);
   }
 
+  //let navigate = useNavigate();
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -38,13 +40,10 @@ export default function App() {
           <Route
             path="/soctasks"
             element={
-              <>
-                <DisplayList
-                  workshops={toggleIsCompleted}
-                  onClick={toggleButton}
-                />
-                <Button title="Return" />
-              </>
+              <DisplayList
+                workshops={toggleIsCompleted}
+                onClick={toggleButton}
+              />
             }
           />
         </Routes>
