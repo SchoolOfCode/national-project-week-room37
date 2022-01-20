@@ -1,6 +1,5 @@
 import "./index.css";
 import Button from "../Button";
-import { useState } from "react";
 
 export function ListItem({ title, date, status, onClick, index }) {
   function getStatus(status) {

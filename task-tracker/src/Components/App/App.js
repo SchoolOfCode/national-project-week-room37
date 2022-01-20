@@ -3,8 +3,7 @@ import DisplayList from "../List";
 import Button from "../Button";
 import { MainBoard } from "../MainBoard";
 import { useState } from "react";
-import { BrowserRouter } from "react-router-dom";
-import { Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   const workshops = [
@@ -37,7 +36,7 @@ export default function App() {
           <Route path="/" element={<MainBoard />} />
 
           <Route
-            path="/SoCTasks"
+            path="/soctasks"
             element={
               <>
                 <DisplayList
