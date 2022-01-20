@@ -9,7 +9,7 @@ export default function DisplayList({ workshops, onClick }) {
   let navigate = useNavigate();
   return (
     <main>
-      <h1>SoC Tasks</h1>
+      <h1 className="socWorkshops">School of Code Workshops</h1>
       <ul>
         {workshops.map(function (item, index) {
           return (

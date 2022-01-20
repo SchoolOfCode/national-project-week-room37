@@ -1,3 +1,63 @@
-body {
-    font: white;
+.title {
+    color: white;
+font-size: 90px;
+font-style: normal;
+font-weight: 600;
+line-height: 106px;
+letter-spacing: -0.02em;
+text-align: center;
+
+}
+
+.subtitle {
+    color: white;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 47px;
+letter-spacing: -0.02em;
+text-align: center;
+
+}
+
+.allTasks {
+    color: white;
+font-size: 35px;
+font-style: normal;
+font-weight: 600;
+line-height: 41px;
+letter-spacing: -0.02em;
+text-align: center;
+}
+
+.myTasks {
+    color: white;
+font-size: 35px;
+font-style: normal;
+font-weight: 600;
+line-height: 41px;
+letter-spacing: -0.02em;
+text-align: center;
+}
+
+.newTask {
+  color: white;
+font-size: 35px;
+font-style: normal;
+font-weight: 600;
+line-height: 41px;
+letter-spacing: -0.02em;
+text-align: center;
+ 
+}
+
+Button {
+    background-color: #157754;
+    color: white;
+    font-size: 25px;
+height: 63px;
+width: 201px;
+left: 952px;
+top: 449px;
+border-radius: 40px;
 }
