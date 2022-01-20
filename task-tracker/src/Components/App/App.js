@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
+
   async function getData() {
     console.log("fetch is working");
     const response = await fetch("http://localhost:4000/");
@@ -17,6 +18,7 @@ export default function App() {
   }, []);
 
   const [toggleIsCompleted, setToggleIsCompleted] = useState([]);
+
 
   function toggleButton(index) {
     const newWorkshop = [
