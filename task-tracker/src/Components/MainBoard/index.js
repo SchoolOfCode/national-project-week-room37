@@ -1,6 +1,8 @@
 import Button from "../Button";
+import { useNavigate } from "react-router-dom";
 
-export function MainBoard({ onClick }) {
+export function MainBoard() {
+  let navigate = useNavigate();
   return (
     <div>
       <h1>Task Tracker</h1>
@@ -9,7 +11,12 @@ export function MainBoard({ onClick }) {
       <ul>
         <li>
           School of Code Tasks
-          <Button title="View" onClick={onClick} />
+          <Button
+            title="View"
+            onClick={() => {
+              navigate("/soctasks");
+            }}
+          />
         </li>
         <li>
           My Tasks <Button title="View" />
