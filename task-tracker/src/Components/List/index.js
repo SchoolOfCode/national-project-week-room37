@@ -5,6 +5,7 @@ import Button from "../Button";
 import { useNavigate } from "react-router";
 
 export default function DisplayList({ workshops, onClick }) {
+  console.log(workshops);
   let navigate = useNavigate();
   return (
     <main>
@@ -20,6 +21,7 @@ export default function DisplayList({ workshops, onClick }) {
               key={index}
               index={index}
               onClick={onClick}
+              repo={item.repo}
             />
           );
         })}

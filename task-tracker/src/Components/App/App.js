@@ -5,17 +5,22 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
-  const workshops = [
-    { title: "Hackathon", date: "10/12/2021", isCompleted: false },
-    { title: "Hackathon", date: "10/12/2021", isCompleted: false },
-    { title: "Hackathon", date: "10/12/2021", isCompleted: false },
-    { title: "Hackathon", date: "10/12/2021", isCompleted: false },
-  ];
 
-  const [toggleIsCompleted, setToggleIsCompleted] = useState(workshops);
+  async function getData() {
+    console.log("fetch is working");
+    const response = await fetch("http://localhost:4000/");
+    const data1 = await response.json();
+    setToggleIsCompleted(data1.rows);
+  }
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const [toggleIsCompleted, setToggleIsCompleted] = useState([]);
+
 
   function toggleButton(index) {
-    console.log(`I am toggling ${index} in ${workshops}`);
     const newWorkshop = [
       ...toggleIsCompleted.slice(0, index),
       {
@@ -33,7 +38,6 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainBoard />} />
-
           <Route
             path="/soctasks"
             element={
