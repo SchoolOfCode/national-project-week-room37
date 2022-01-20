@@ -1,20 +1,27 @@
 import "./App.css";
 import DisplayList from "../List";
-
 import { MainBoard } from "../MainBoard";
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
-  async function getData() {
-    console.log("fetch is working");
-    const response = await fetch("http://localhost:5000/");
-    const data = response.json();
-    console.log(data);
-  }
+  let arr = [];
+
   useEffect(() => {
-    getData();
-  }, []);
+    async function getData() {
+      console.log("fetch is working");
+      const response = await fetch("http://localhost:4000/");
+      const data = await response.json();
+      let arr = data;
+      console.log(arr.rows);
+      return arr;
+    }
+    //getData();
+    console.log(getData());
+  }, arr);
+
+  const [data, setData] = useState(arr);
+  console.log(arr);
 
   const workshops = [
     { title: "Hackathon", date: "10/12/2021", isCompleted: false },
@@ -38,8 +45,6 @@ export default function App() {
     setToggleIsCompleted(newWorkshop);
     console.log(newWorkshop);
   }
-
-  //let navigate = useNavigate();
 
   return (
     <div className="App">
