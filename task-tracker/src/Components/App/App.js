@@ -5,24 +5,6 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
-  let arr = [];
-
-  useEffect(() => {
-    async function getData() {
-      console.log("fetch is working");
-      const response = await fetch("http://localhost:4000/");
-      const data = await response.json();
-      let arr = data;
-      console.log(arr.rows);
-      return arr;
-    }
-    //getData();
-    console.log(getData());
-  }, arr);
-
-  const [data, setData] = useState(arr);
-  console.log(arr);
-
   const workshops = [
     { title: "Hackathon", date: "10/12/2021", isCompleted: false },
     { title: "Hackathon", date: "10/12/2021", isCompleted: false },
