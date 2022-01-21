@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+.soc-tasks {
+  background-color: rgba(3, 44, 90, 0.575);
+  padding: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  border-radius: 90px;
+}
+
+span {
+  padding: 5px;
+  padding-left: 50px;
+}
+
+span:nth-child(1) {
+  width: 300px;
+}
+
+span:nth-child(2) {
+  width: 150px;
+}
+
+.soc-tasks li {
+  font-family: "Kanit", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  text-align: start;
+  background-color: #3790c4;
+  border-radius: 15px;
+}
+
+.soc-tasks li:hover {
+  background-color: #23709c;
+}
+h1 {
+  margin-top: 30px;
+}
+
+.return-btn {
+  margin: auto;
+  background-color: tomato;
+}

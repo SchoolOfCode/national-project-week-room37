@@ -9,8 +9,8 @@ export default function DisplayList({ workshops, onClick }) {
   let navigate = useNavigate();
   return (
     <main>
-      <h1>SoC Tasks</h1>
-      <ul>
+      <h1>School of Code Tasks</h1>
+      <ul className="soc-tasks">
         {workshops.map(function (item, index) {
           return (
             <ListItem
@@ -25,13 +25,14 @@ export default function DisplayList({ workshops, onClick }) {
             />
           );
         })}
-        <Button
-          title="Return"
-          onClick={() => {
-            navigate("/");
-          }}
-        />
       </ul>
+      <Button
+        title="Return"
+        className="return-btn"
+        onClick={() => {
+          navigate("/");
+        }}
+      />
     </main>
   );
 }

@@ -1,10 +1,11 @@
 import "./index.css";
 import Button from "../Button";
+import "./index.css";
 
 export function ListItem({ title, date, status, onClick, index, repo }) {
   function getStatus(status) {
     if (status) {
-      return "your task is completed 🎉";
+      return "your task is completed";
     } else {
       return "click to complete task";
     }
@@ -12,10 +13,14 @@ export function ListItem({ title, date, status, onClick, index, repo }) {
 
   return (
     <div className="SoC-List-Item">
-      <li> {title} </li>
-      <li> {date} </li>
-      <li> {repo} </li>
+      <li>
+        <span>
+          <a href={repo}> {title} </a>
+        </span>
+        <span> {date} </span>
+      </li>
       <Button
+        className="complete-task-btn"
         onClick={() => {
           onClick(index);
         }}

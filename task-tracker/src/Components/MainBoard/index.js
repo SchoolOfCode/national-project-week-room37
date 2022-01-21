@@ -8,11 +8,11 @@ export function MainBoard() {
     <div>
       <h1>Task Tracker</h1>
       <h2>Keep track of your tasks</h2>
-      <span></span>
-      <ul>
+      <ul className="main-board">
         <li>
           School of Code Tasks
           <Button
+            className="board-button"
             title="View"
             onClick={() => {
               navigate("/soctasks");
@@ -20,10 +20,10 @@ export function MainBoard() {
           />
         </li>
         <li>
-          My Tasks <Button title="View" />
+          My Tasks <Button className="my-task-btn" title="View" />
         </li>
         <li>
-          Create a New Task <Button title="Add Task" />
+          Create a New Task <Button className="board-button" title="Add Task" />
         </li>
       </ul>
     </div>

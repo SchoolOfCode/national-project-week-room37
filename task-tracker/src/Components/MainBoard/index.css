@@ -1,3 +1,58 @@
-body {
-    font: white;
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+}
+
+.main-board {
+  background-color: black;
+  max-width: 600px;
+  max-height: 500px;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  gap: 30px;
+  border-radius: 50px;
+  column-gap: 20px;
+}
+
+.main-board li {
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.main-board li:nth-child(2) {
+  gap: 215px;
+}
+
+.main-board .my-task-li {
+  gap: 388px;
+}
+
+.main-board button {
+  padding: 05px 15px 05px 15px;
+  background-color: #217759;
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border: solid 0.2px rgb(41, 40, 40);
+  border-radius: 40px;
+  margin-left: 60px;
+}
+.main-board button:hover {
+  background-color: #1c5541;
 }

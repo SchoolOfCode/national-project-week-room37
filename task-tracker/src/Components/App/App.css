@@ -1,7 +1,7 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 
 body {
   background-image: URL("./galaxy.jpeg");
+  color: white;
 }
