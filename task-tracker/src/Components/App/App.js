@@ -8,9 +8,9 @@ export default function App() {
 
   async function getData() {
     console.log("fetch is working");
-    const response = await fetch("http://localhost:4000/");
+    const response = await fetch("https://tasktrackernew.herokuapp.com/");
     const data1 = await response.json();
-    setToggleIsCompleted(data1.rows);
+    setToggleIsCompleted(data1);//does not need .rows since the server is ding this for us.
   }
 
   useEffect(() => {

@@ -1,0 +1,43 @@
+.menu_btn{
+  background: #157754;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+.task_btn{
+  background: #2BB483;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.75em;
+}
+
+.return_btn{
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+}

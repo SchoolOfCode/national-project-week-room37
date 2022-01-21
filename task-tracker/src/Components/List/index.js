@@ -5,10 +5,9 @@ import Button from "../Button";
 import { useNavigate } from "react-router";
 
 export default function DisplayList({ workshops, onClick }) {
-  console.log(workshops);
   let navigate = useNavigate();
   return (
-    <main>
+    <main className="soc_main">
       <h1>SoC Tasks</h1>
       <ul>
         {workshops.map(function (item, index) {
@@ -26,6 +25,7 @@ export default function DisplayList({ workshops, onClick }) {
           );
         })}
         <Button
+          className='return_btn'
           title="Return"
           onClick={() => {
             navigate("/");

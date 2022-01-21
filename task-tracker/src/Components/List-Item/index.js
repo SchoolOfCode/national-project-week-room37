@@ -16,6 +16,7 @@ export function ListItem({ title, date, status, onClick, index, repo }) {
       <li> {date} </li>
       <li> {repo} </li>
       <Button
+        className='task_btn'
         onClick={() => {
           onClick(index);
         }}

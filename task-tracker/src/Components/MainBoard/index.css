@@ -1,3 +1,50 @@
 body {
     font: white;
 }
+
+.landing_page {
+    width: 100%;
+    height: 500px;
+    
+}
+
+.task_menu_container{
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.70);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    
+}
+
+.list_container{
+    margin: 0 auto;
+    width: 85%;
+    border-top: 3px solid #1E508B;
+}
+
+h2{
+    padding-top: 0.2em;
+    font-size: 2em;
+    border: 2px solid green;
+}
+
+li{
+    border: 5px solid red;
+    font-size: 1.5em;
+
+}
+
+.menu_btn{
+    background-color: green;
+}
+
+@media only screen and (max-width: 600px) {
+    li{
+        border: 5px solid red;
+        font-size: 1.2em;
+        text-align: left;
+    }
+    
+}
