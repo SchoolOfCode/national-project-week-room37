@@ -9,9 +9,7 @@
 li {
   list-style-type: none;
 }
-li a:link {
-  color: white;
-}
+
 button {
   padding: 11px 15px 11px 15px;
   background-color: #217759;
@@ -26,4 +24,7 @@ button {
 
 button:hover {
   background-color: #1c5541;
+}
+a {
+  color: white;
 }

@@ -4,4 +4,8 @@
 body {
   background-image: URL("./galaxy.jpeg");
   color: white;
+  margin-bottom: 20px;
+}
+a {
+  color: white;
 }
