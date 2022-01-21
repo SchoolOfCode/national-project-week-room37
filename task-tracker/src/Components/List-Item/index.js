@@ -15,7 +15,9 @@ export function ListItem({ title, date, status, onClick, index, repo }) {
     <div className="SoC-List-Item">
       <li>
         <span>
-          <a href={repo}> {title} </a>
+          <a href={repo} target="_blank" rel="noreferrer">
+            {title}
+          </a>
         </span>
         <span> {date} </span>
       </li>
